@@ -1,0 +1,6 @@
+C:\Users\w2\RiderProjects\BebraEngine\BebraEngine\bin\Debug\BebraEngine.exe
+C:\Users\w2\RiderProjects\BebraEngine\BebraEngine\bin\Debug\BebraEngine.pdb
+C:\Users\w2\RiderProjects\BebraEngine\BebraEngine\obj\Debug\BebraEngine.csproj.AssemblyReference.cache
+C:\Users\w2\RiderProjects\BebraEngine\BebraEngine\obj\Debug\BebraEngine.csproj.CoreCompileInputs.cache
+C:\Users\w2\RiderProjects\BebraEngine\BebraEngine\obj\Debug\BebraEngine.exe
+C:\Users\w2\RiderProjects\BebraEngine\BebraEngine\obj\Debug\BebraEngine.pdb
