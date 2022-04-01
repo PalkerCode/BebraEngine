@@ -2,6 +2,7 @@
 
 using System;
 using System.Drawing;
+using System.Windows.Forms;
 using BebraEngine.BebraEngine;
 
 namespace BebraEngine.Game
@@ -11,7 +12,7 @@ namespace BebraEngine.Game
     {
         // Create sprite variable
         private Sprite2D icon;
-        
+
         // Create random X and Y values
         private Random xValue = new Random();
         private Random yValue = new Random();
@@ -20,13 +21,14 @@ namespace BebraEngine.Game
         private int xSpeed = 0;
         private int ySpeed = 0;
         
-        // Game window settings                                Window Size           Window title
+        // Game window settings. Window Size, window title
         public BebraTemplateGame() : base(new Vector2(1280, 720), "Bebra Engine Game") { }
         
         // When game instance created, this method will be executed
-        public override void onLoad()
+        public override void OnLoad()
         {
-            // Apply settings for icon sprite        Position                        Scale         Tag (Name)      Sprite Directory
+            backgroundColor = Color.Black; // You can set background color (you can delete this line because default color is black)
+            // Apply settings for icon sprite. Position, Scale, Tag (Name), Sprite Directory
             icon = new Sprite2D(new Vector2(640, 360), new Vector2(200, 200), "Icon", "DVD/index");
             
             // Apply random value to X and Y speed
@@ -35,13 +37,13 @@ namespace BebraEngine.Game
         }
         
         // This method will be executed before next window frame rendered
-        public override void onDraw()
+        public override void OnDraw()
         {
             
         }
         
         // This method will be executed every window frame
-        public override void onUpdate()
+        public override void OnUpdate()
         {
             // Apply X and Y speed to icon position
             icon.position.X += xSpeed;
@@ -82,6 +84,16 @@ namespace BebraEngine.Game
                 // Apply this value to icon position
                 icon.position.Y += ySpeed;
             }
+        }
+
+        public override void GetKeyDown(KeyEventArgs e)
+        {
+            
+        }
+
+        public override void GetKeyUp(KeyEventArgs e)
+        {
+            
         }
     }
 }
